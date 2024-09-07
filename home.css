@@ -1,0 +1,253 @@
+/* Custom Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Header */
+
+#header-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+}
+
+#header-container .toggle-logo {
+  display: flex;
+}
+
+#header-container .toggle-logo .toggle-icon {
+  padding-right: 20px;
+}
+
+.youtube-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-logo img {
+  height: 20px;
+}
+
+/* yt-search-container */
+.yt-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Yt Search */
+
+.yt-search {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 2rem 0 4rem;
+}
+
+.yt-search .yt-search-input {
+  border-radius: 20px 0px 0px 20px;
+  padding: 10px 20px;
+  border: 1px solid #9f9f9f;
+  /* width: 500px; */
+  width: 100%;
+}
+
+.yt-search-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid #9f9f9f;
+  background-color: #F8F8F8;
+  border-left: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.25rem;
+  cursor: pointer;
+}
+
+.yt-search-btn:hover {
+  background-color: #F0F0F0;
+}
+
+.yt-search-btn img {
+  height: 25px;
+}
+
+.yt-search-icon img {
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.yt-search-icon img:hover {
+  background-color: #e5e5e5;
+}
+
+/* Yt Header Right */
+
+.yt-header-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 15px;
+}
+.yt-profile-icon img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/*************************** left-menu-container **************************/
+#yt-main-container {
+  display: flex;
+  padding-top: 50px;
+}
+
+.sidebar-container {
+    position: absolute;
+    left: 0;
+  width: 18%;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+
+  overflow: scroll;
+
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+}
+
+.sidebar-container:hover {
+  scrollbar-color: grey transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-items {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 5px 10px;
+  height: 45px;
+  text-decoration: none;
+}
+
+.sidebar-items:hover {
+  background-color: #9f9f9f;
+  border-radius: 10px;
+}
+
+.sidebar-items .sidebar-items-icon {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.sidebar-items .sidebar-items-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-items .sidebar-items-name p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Toggle Button Property */
+.hidden-content {
+  display: none;
+}
+
+/* Video Card */
+
+.thumbnail {
+    position: relative;
+    display: flex;
+}
+  
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 150px;
+    background-color: #aaa;
+}
+
+
+.videos-container {
+  width: 82%;
+  position: absolute;
+  right: 0px;
+}
+
+#video-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem 1rem;
+  padding: 3rem 0;
+  margin: 0 1.5rem;
+  border-top: 4px solid #ccc;
+}
+
+.video-bottom-container {
+  display: flex;
+}
+
+.video-bottom-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.channel-icon {
+  margin-right: 0.75rem;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #aaa;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.video-channel-name {
+  margin-bottom: 0.1rem;
+  text-decoration: none;
+  transition: color 150ms;
+}
+
+.video-channel-name:hover {
+  color: #111;
+}
+
+.video-channel-name,
+.video-metadata {
+  color: #555;
+}

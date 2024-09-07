@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <header id="header-container">
+      <div class="toggle-logo">
+        <div class="toggle-icon yt-search-icon" id="toggleButton">
+          <img src="./icon/toggle.svg" alt="" />
+        </div>
+        <div class="youtube-logo">
+          <img src="./icon/new-youtube-logo.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="yt-search-container">
+        <div class="yt-search">
+          <input
+            id="user_input"
+            type="search"
+            name="search"
+            class="yt-search-input"
+            placeholder="Search"
+          />
+          <button class="yt-search-btn" id="search_button">
+            <img src="./icon/search.svg" alt="" />
+          </button>
+        </div>
+
+        <a class="yt-search-icon">
+          <img src="./icon/mic.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="yt-header-right">
+        <a class="yt-search-icon">
+          <img src="./icon/Live_Stream.svg" alt="" />
+        </a>
+        <a class="yt-search-icon">
+          <img src="./icon/notification.svg" alt="" />
+        </a>
+        <a class="yt-profile-icon">
+          <img src="./icon/profile.jpeg" alt="" />
+        </a>
+      </div>
+    </header>
+
+    <!-- </header> -->
+    <section id="yt-main-container">
+      <div class="sidebar-container">
+        <a class="sidebar-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/home.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name hide-items">
+            <p>Home</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/shorts.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name hide-items">
+            <p>Shorts</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/subscriptions.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name hide-items">
+            <p>Subscriptions</p>
+          </div>
+        </a>
+
+        <hr class="hide-items" />
+
+        <a class="sidebar-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/you.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name hide-items">
+            <p>You</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/your_channel.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Your channel</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/history.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>History</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/playlists.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Playlists</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/your_videos.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Your videos</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/watch_later.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Watch Later</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/liked_videos.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Liked videos</p>
+          </div>
+        </a>
+
+        <hr class="hide-items" />
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/settings.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Setting</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/report_history.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Report History</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/help.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Help</p>
+          </div>
+        </a>
+
+        <a class="sidebar-items hide-items" href="#">
+          <div class="sidebar-items-icon">
+            <img src="./icon/send_feedback.svg" alt="" />
+          </div>
+          <div class="sidebar-items-name">
+            <p>Send Feedback</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video Container -->
+      <div class="videos-container">
+        <div id="video-card-container"></div>
+      </div>
+    </section>
+
+    <script src="./home.js"></script>
+  </body>
+</html>
