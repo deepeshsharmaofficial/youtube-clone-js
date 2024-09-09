@@ -84,8 +84,10 @@ let appendVideoInToContainer = (video_data) => {
 
     let {
         channelIconImage,
+        id : { 
+            videoId
+        },
         snippet: {
-            channelId,
             title,
             channelTitle,
             description,
@@ -101,7 +103,7 @@ let appendVideoInToContainer = (video_data) => {
 
     video_container.innerHTML += `
         <div class="video-card-item">
-            <a class="thumbnail" href="https://www.youtube.com/watch?v=${channelId}">
+            <a class="thumbnail" href="https://www.youtube.com/watch?v=${videoId}">
                 <img class="thumbnail-image" src="${url}" alt="">
             </a>
             <div class="video-bottom-container">
