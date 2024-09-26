@@ -25,32 +25,13 @@ let search_http = "https://www.googleapis.com/youtube/v3/search?";
 let channel_http = "https://www.googleapis.com/youtube/v3/channels?";
 
 
-let callGeneralApi = async () => {
-
-    let searchParams = new URLSearchParams({
-        key: api_key,
-        part: "snippet",
-        maxResults: 10,
-        type: "video",
-        regionCode: "IN",
-    });
-
-    let res = await fetch(search_http + searchParams);
-    let data = await res.json();
-
-    data.items.map(item => {
-        getChannelIcon(item)
-    })
-}
-callGeneralApi(); // I am calling for default content
-
 let callYouTubeDataAPI = async (query) => {
 
     let searchParams = new URLSearchParams({
         key: api_key,
         part: "snippet",
         q: query,
-        maxResults: 10,
+        maxResults: 5,
         type: "video",
         regionCode: "IN",
     });
@@ -78,7 +59,7 @@ let getChannelIcon = async (video_data) => {
 }
 
 let video_container = document.getElementById("video-card-container");
-video_container.innerHTML = "";
+// video_container.innerHTML = "";
 
 let appendVideoInToContainer = (video_data) => {
 
