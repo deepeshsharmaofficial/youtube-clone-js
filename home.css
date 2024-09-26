@@ -251,3 +251,27 @@
 .video-metadata {
   color: #555;
 }
+
+/* =========== Media Query  ============= */
+
+/* 650ps */
+@media screen and (max-width: 650px) {
+
+  #toggleButton, .yt-mic ,.yt-liveStream {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1311px) {
+
+  .sidebar-container {
+    display: none;
+
+  }
+
+  .videos-container {
+    width: 100%;
+  }
+
+}
